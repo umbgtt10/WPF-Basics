@@ -12,9 +12,9 @@ namespace DataBinding {
         public BindingToCustomType() {
             Craftsman = new Craftsman() {
                 Age = 45,
-                LastName = "Seemann",
+                LastName = "John",
                 Name = "Mark",
-                PicturePath = "Images/Seemann.jpeg"
+                PicturePath = "Images/John.jpeg"
             };
 
             InitializeComponent();            

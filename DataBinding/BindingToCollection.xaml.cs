@@ -22,9 +22,10 @@ namespace DataBinding {
 
         public BindingToCollection() {
             Craftsmen = new ObservableCollection<Craftsman>() {
-                new Craftsman() {Age = 45, LastName = "Seemann", Name = "Mark", PicturePath = "Images/Jack.jpeg"},
-                new Craftsman() {Age = 60, LastName = "Martin", Name = "Robert", PicturePath = "Images/Bob.jpg"},
+                new Craftsman() {Age = 45, LastName = "Jack", Name = "Mark", PicturePath = "Images/Jack.jpeg"},
+                new Craftsman() {Age = 60, LastName = "Bob", Name = "Robert", PicturePath = "Images/Bob.jpg"},
             };
+
             InitializeComponent();
         }
 
@@ -32,7 +33,7 @@ namespace DataBinding {
             Task.Run(() => {
                 Craftsmen.Add(new Craftsman() {
                     Age = 60,
-                    LastName = "Fowler",
+                    LastName = "Nick",
                     Name = "Martin",
                     PicturePath = "Images/John.jpg"
                 });
